@@ -7,6 +7,6 @@ import lombok.Getter;
 @AllArgsConstructor
 public class Panel {
 
-    private final char[][] panels = new char[3][3];
+    public static final char[][] panels = new char[3][3];
 
 }
