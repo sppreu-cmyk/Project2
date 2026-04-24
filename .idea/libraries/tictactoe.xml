@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="tictactoe">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/project_2_tasks/engine/src/project/tictactoe.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
