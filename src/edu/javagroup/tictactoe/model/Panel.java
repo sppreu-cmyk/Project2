@@ -1,12 +1,11 @@
 package edu.javagroup.tictactoe.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
+import lombok.RequiredArgsConstructor;
 
 @Getter
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class Panel {
-    private final char[][] panels = new char[3][3];
-}
 
+    private final char[][] panels;
+}
