@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="engine/bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="icon" href="engine/src/ico/java.ico">
+    <title>Project #2</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="alert alert-success" role="alert">
+            <h1>Project #2</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="list-group">
+                <a href="index.html" class="list-group-item list-group-item-action">Main page</a>
+                <a href="task00.html" class="list-group-item list-group-item-action">Task #0</a>
+                <a href="task01.html" class="list-group-item list-group-item-action">Task #1</a>
+                <a href="task02.html" class="list-group-item list-group-item-action">Task #2</a>
+                <a href="task03.html" class="list-group-item list-group-item-action">Task #3</a>
+                <a href="task04.html" class="list-group-item list-group-item-action">Task #4</a>
+                <a href="task05.html" class="list-group-item list-group-item-action">Task #5</a>
+                <a href="task06.html" class="list-group-item list-group-item-action">Task #6</a>
+                <a href="task07.html" class="list-group-item list-group-item-action">Task #7</a>
+                <a href="task08.html" class="list-group-item list-group-item-action active">Task #8</a>
+                <a href="task09.html" class="list-group-item list-group-item-action">Task #9</a>
+                <a href="task10.html" class="list-group-item list-group-item-action">Task #10</a>
+                <a href="task11.html" class="list-group-item list-group-item-action">Task #11</a>
+            </div>
+            <br/>
+        </div>
+        <div class="col-sm-9">
+
+            <h4>Task #8</h4>
+            <hr/>
+            зависимости:<br/>
+            <a href="task02.html">Panel</a><br/>
+            <a href="task02.html">Step</a><br/>
+            <a href="task03.html">PanelService</a><br/>
+            <a href="task05.html">EnemyService</a><br/>
+            <a href="task06.html">EnemyL1ServiceImpl</a><br/>
+            <a href="task07.html">EnemyL2ServiceImpl</a><br/>
+            <hr/>
+
+            <h4>Subtask #1</h4>
+            <u>создать имплементацию</u><br/>
+            создать класс edu.javagroup.tictactoe.service.impl.EnemyL3ServiceImpl<br/>
+            (является прямым потомком EnemyService и EnemyL2ServiceImpl)<br/>
+            <hr/>
+
+            <h4>Subtask #2</h4>
+            реализовать метод <strong>setPoint</strong><br/>
+            реализация:<br/>
+            если метод step вернул true, то вызвать метод setPoint суперкласса<br/>
+            <hr/>
+
+            <h4>Subtask #3</h4>
+            создать метод <strong>step</strong><br/>
+            возвращает: boolean<br/>
+            реализация:<br/>
+            1. если метод isEmptyPoint от panelService для центральной ячейки вернул true, то вызвать метод setCenterPoint и вернуть false<br/>
+            2. вернуть результат вызова blockWin<br/>
+            <hr/>
+
+            <h4>Subtask #4</h4>
+            создать метод <strong>blockWin</strong><br/>
+            возвращает: boolean<br/>
+            реализация:<br/>
+            вернуть результат работы методов
+            checkDiagonalLin для 'O' и 'X'<br/>
+            checkDiagonalLin для 'X' и 'O'<br/>
+            checkDiagonalWin для 'O' и 'X'<br/>
+            checkDiagonalWin для 'X' и 'O'<br/>
+            checkVertical для 'O' и 'X'<br/>
+            checkVertical для 'X' и 'O'<br/>
+            checkHorizontal для 'O' и 'X'<br/>
+            checkHorizontal для 'X' и 'O'<br/>
+            <hr/>
+
+            <br/>
+            <br/>
+        </div>
+    </div>
+</div>
+<script src="engine/jquery/3.6.0/jquery.min.js"></script>
+<script src="engine/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+</body>
+</html>

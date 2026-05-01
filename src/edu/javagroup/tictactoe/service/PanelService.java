@@ -7,7 +7,7 @@ import edu.javagroup.tictactoe.model.Step;
 
 public record PanelService(Panel panel) {
 
-    private void setPoint(Step step) {
+    public void setPoint(Step step) {
         char[][] grid = panel.getPanels();
         if (grid[step.vertical()][step.horizontal()] == Constants.EMPTY_POINT) {
             grid[step.vertical()][step.horizontal()] = step.symbol();
@@ -24,16 +24,10 @@ public record PanelService(Panel panel) {
     }
 
     public boolean isComplete() {
-        char[][] grid = panel.getPanels();
-        int count = 0;
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[i].length; j++) {
-                if (grid[i][j] != Constants.EMPTY_POINT) {
-                    count++;
-                }
-            }
+        if (countMarked() == 9) {
+            return true;
         }
-        return count == 9;
+        return false;
     }
 
     public int countMarked() {
@@ -92,10 +86,10 @@ public record PanelService(Panel panel) {
                 count++;
             }
         }
-            return count;
+        return count;
 
-        }
     }
+}
 
 
 

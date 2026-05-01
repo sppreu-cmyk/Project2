@@ -1,17 +1,17 @@
 package edu.javagroup.tictactoe.service;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
 
 public class CheckWinService {
 
     private final PanelService panelService;
 
-
-    public CheckWinService(PanelService panelService) {
-        this.panelService = panelService;
-    }
-
     public boolean checkWin(char symbol) {
-//        return checkByVertical || checkByHorizontal || checkByDiagonals;
-        return false;
+        return checkByVertical(symbol) || checkByHorizontal(symbol) || checkByDiagonals(symbol);
+
     }
 
     public boolean checkByVertical(char symbol) {
